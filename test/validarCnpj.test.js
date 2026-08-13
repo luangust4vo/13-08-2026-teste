@@ -17,6 +17,10 @@ describe("Validador de CNPJ", () => {
     test("deve aceitar um CNPJ alfanumérico mesmo com letras minúsculas (case-insensitive)", () => {
       expect(validar("12.abc.345/01de-35")).toBe(true);
     });
+
+    test("deve validar um CNPJ onde os dígitos verificadores resultam em 0", () => {
+      expect(validar("07.526.557/0001-00")).toBe(true);
+    });
   });
 
   describe("Casos de falha", () => {
