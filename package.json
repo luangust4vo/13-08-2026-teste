@@ -1,0 +1,17 @@
+{
+  "name": "13-08-2026",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0",
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.4.2"
+  }
+}
